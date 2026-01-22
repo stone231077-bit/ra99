@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru" id="htmlLang">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Консалтинг и стратегия, ведение Instagram и Facebook, оптимизация сайтов и интернет-магазинов, автоматизация маркетинга.">
+    <title>Brandex — Digital консалтинг и маркетинг</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="/">Brandex</a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#services" data-i18n="nav.services">Услуги</a></li>
+                    <li><a href="#clients" data-i18n="nav.clients">Для кого</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Контакты</a></li>
+                </ul>
+                <div class="nav-right">
+                    <div class="lang-switcher" id="langSwitcher">
+                        <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский">RU</button>
+                        <button type="button" class="lang-btn" data-lang="uk" aria-label="Українська">UA</button>
+                        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                    </div>
+                    <button type="button" class="btn-primary nav-btn" id="contactBtn" data-i18n="nav.cta">Получить консультацию</button>
+                </div>
+                <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" data-i18n-aria="nav.menu" aria-label="Меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Brandex</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Консалтинг и стратегия. Социальные сети. Веб и e-commerce. Автоматизация маркетинга</p>
+            <div class="hero-cta">
+                <button type="button" class="btn-primary btn-large" id="heroConsultation" data-i18n="hero.consultation">Получить консультацию</button>
+                <button type="button" class="btn-secondary btn-large" id="heroAudit" data-i18n="hero.audit">Бесплатный аудит</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services.title">Услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 data-i18n="services.consulting.title">Консалтинг и стратегия</h3>
+                    <ul class="service-list">
+                        <li data-i18n="services.consulting.bullet1">Digital-консалтинг для малого бизнеса</li>
+                        <li data-i18n="services.consulting.bullet2">Анализ онлайн-присутствия</li>
+                        <li data-i18n="services.consulting.bullet3">Стратегия продаж и продвижения</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3 data-i18n="services.social.title">Социальные сети</h3>
+                    <ul class="service-list">
+                        <li data-i18n="services.social.bullet1">Ведение Instagram</li>
+                        <li data-i18n="services.social.bullet2">Ведение Facebook</li>
+                        <li data-i18n="services.social.bullet3">Контент-план и публикации</li>
+                        <li data-i18n="services.social.bullet4">Настройка рекламы (Meta Ads)</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3 data-i18n="services.web.title">Веб и e-commerce</h3>
+                    <ul class="service-list">
+                        <li data-i18n="services.web.bullet1">Оптимизация сайтов (SEO, скорость)</li>
+                        <li data-i18n="services.web.bullet2">Оптимизация интернет-магазинов</li>
+                        <li data-i18n="services.web.bullet3">Улучшения UX/UI</li>
+                        <li data-i18n="services.web.bullet4">Поддержка и сопровождение сайтов</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3 data-i18n="services.automation.title">Автоматизация маркетинга</h3>
+                    <ul class="service-list">
+                        <li data-i18n="services.automation.bullet1">Настройка CRM</li>
+                        <li data-i18n="services.automation.bullet2">Воронки продаж</li>
+                        <li data-i18n="services.automation.bullet3">Email-маркетинг</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="services-cta">
+                <button type="button" class="btn-primary btn-large" id="servicesConsultation" data-i18n="services.cta.consultation">Получить консультацию</button>
+                <button type="button" class="btn-secondary btn-large" id="servicesAudit" data-i18n="services.cta.audit">Бесплатный аудит</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <h2 class="section-title" data-i18n="clients.title">Для кого мы работаем</h2>
+            <p class="section-subtitle" data-i18n="clients.subtitle">Помогаем бизнесу расти в цифровом пространстве</p>
+            <div class="clients-grid">
+                <div class="client-card">
+                    <h3 data-i18n="clients.small.title">Малый бизнес</h3>
+                    <p data-i18n="clients.small.desc">Помогаем небольшим компаниям выйти в онлайн и увеличить продажи</p>
+                </div>
+                <div class="client-card">
+                    <h3 data-i18n="clients.stores.title">Онлайн-магазины</h3>
+                    <p data-i18n="clients.stores.desc">Оптимизируем интернет-магазины для роста конверсии и продаж</p>
+                </div>
+                <div class="client-card">
+                    <h3 data-i18n="clients.creators.title">Эксперты и блогеры</h3>
+                    <p data-i18n="clients.creators.desc">Развиваем личный бренд и увеличиваем аудиторию в соцсетях</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Свяжитесь с нами</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Оставьте заявку — и мы свяжемся с вами в ближайшее время</p>
+            <div class="form-message" id="formMessage" aria-live="polite"></div>
+            <form class="contact-form" id="contactForm">
+                <input type="hidden" name="_subject" value="New lead from Brandex website">
+                <input type="text" name="_gotcha" style="display:none">
+                <div class="form-group">
+                    <label for="name" data-i18n="contact.form.name">Имя *</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company" data-i18n="contact.form.company">Компания</label>
+                    <input type="text" id="company" name="company" autocomplete="organization">
+                </div>
+                <div class="form-group">
+                    <label for="email" data-i18n="contact.form.email">Email *</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" data-i18n="contact.form.phone">Номер телефона *</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-i18n="contact.form.message">Расскажите о вашем проекте</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <span data-i18n="contact.form.privacy">Я согласен с обработкой персональных данных</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn-primary btn-large" data-i18n="contact.form.submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contacts">Контакты</h4>
+                    <p><a href="mailto:dak231077@gmail.com">dak231077@gmail.com</a></p>
+                    <p><a href="https://t.me/Denys2310" target="_blank" rel="noopener noreferrer">Telegram: @Denys2310</a></p>
+                    <p><a href="https://wa.me/380662539697" target="_blank" rel="noopener noreferrer">WhatsApp: +380 66 253 96 97</a></p>
+                    <p><span data-i18n="footer.phoneLabel">Телефон</span>: <a href="tel:+380662539697">+380 66 253 96 97</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.navigation">Навигация</h4>
+                    <ul>
+                        <li><a href="#services" data-i18n="nav.services">Услуги</a></li>
+                        <li><a href="#clients" data-i18n="nav.clients">Для кого</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Контакты</a></li>
+                        <li><a href="privacy.html" data-i18n="footer.privacy">Политика конфиденциальности</a></li>
+                        <li><a href="terms.html" data-i18n="footer.terms">Условия использования</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.social">Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="https://t.me/Denys2310" target="_blank" rel="noopener noreferrer" class="social-link" data-i18n="footer.telegram">Telegram</a>
+                        <a href="https://wa.me/380662539697" target="_blank" rel="noopener noreferrer" class="social-link" data-i18n="footer.whatsapp">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="copyrightText">&copy; 2024 Brandex</p>
+                <p id="signatureText">Создано: Denys Kamenshchykov</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <p>
+                <span data-i18n="cookie.text.prefix">Мы используем файлы cookie на нашем веб-сайте. Подробнее — в </span>
+                <a href="privacy.html" id="cookiePrivacyLink" data-i18n="cookie.text.link">Политике конфиденциальности</a>.
+            </p>
+            <div class="cookie-buttons">
+                <button type="button" class="btn-primary" id="acceptCookies" data-i18n="cookie.accept">Принять</button>
+                <button type="button" class="btn-secondary" id="cookieSettings" data-i18n="cookie.settings">Настройки</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div class="cookie-modal" id="cookieModal">
+        <div class="cookie-modal-content">
+            <h3 data-i18n="cookie.modal.title">Настройки cookie</h3>
+            <div class="cookie-toggle-group">
+                <div class="cookie-toggle-item">
+                    <label>
+                        <input type="checkbox" id="cookieNecessary" checked disabled>
+                        <span data-i18n="cookie.modal.necessary">Необходимые (всегда включены)</span>
+                    </label>
+                </div>
+                <div class="cookie-toggle-item">
+                    <label>
+                        <input type="checkbox" id="cookieAnalytics">
+                        <span data-i18n="cookie.modal.analytics">Аналитика</span>
+                    </label>
+                </div>
+                <div class="cookie-toggle-item">
+                    <label>
+                        <input type="checkbox" id="cookieMarketing">
+                        <span data-i18n="cookie.modal.marketing">Маркетинг</span>
+                    </label>
+                </div>
+            </div>
+            <div class="cookie-modal-buttons">
+                <button type="button" class="btn-primary" id="cookieSave" data-i18n="cookie.modal.save">Сохранить</button>
+                <button type="button" class="btn-secondary" id="cookieClose" data-i18n="cookie.modal.close">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
