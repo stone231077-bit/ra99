@@ -196,12 +196,53 @@ body {
 }
 
 /* Hero Section */
+/* ===== HERO BACKGROUND WAVE ===== */
 .hero {
+    position: relative;
+    overflow: hidden;
     margin-top: 80px;
     padding: 5rem 0;
     text-align: center;
-    background: linear-gradient(135deg, #0B1F33 0%, #1a3d5c 100%);
+    background: linear-gradient(
+        120deg,
+        #0b2a45,
+        #123d63,
+        #0e4b78,
+        #123d63,
+        #0b2a45
+    );
+    background-size: 300% 300%;
+    animation: waveGradient 18s ease-in-out infinite;
     color: var(--secondary-color);
+}
+
+/* Анимация перелива */
+@keyframes waveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Затемнение для читаемости текста */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Контент выше затемнения */
+.hero > * {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-cta {
