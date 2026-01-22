@@ -212,7 +212,7 @@ body {
         #0b2a45
     );
     background-size: 300% 300%;
-    animation: waveGradient 18s ease-in-out infinite;
+    animation: waveGradient 3s ease-in-out infinite;
     color: var(--secondary-color);
 }
 
@@ -226,6 +226,30 @@ body {
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+/* Световая волна поверх */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    background: radial-gradient(
+        circle at 30% 50%,
+        rgba(255, 255, 255, 0.08),
+        transparent 60%
+    );
+    animation: lightWave 10s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes lightWave {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(20%);
     }
 }
 
