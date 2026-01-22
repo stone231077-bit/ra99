@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Консалтинг и стратегия, ведение Instagram и Facebook, оптимизация сайтов и интернет-магазинов, автоматизация маркетинга.">
-    <title>Denys Kamenshchykov — Digital консалтинг и маркетинг</title>
+    <title>Brandex — Digital консалтинг и маркетинг</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
         <div class="container">
             <nav class="nav">
                 <div class="logo">
-                    <a href="/">Denys Kamenshchykov</a>
+                    <a href="/">Brandex</a>
                 </div>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#services" data-i18n="nav.services">Услуги</a></li>
@@ -43,7 +43,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title">Denys Kamenshchykov</h1>
+            <h1 class="hero-title">Brandex</h1>
             <p class="hero-subtitle" data-i18n="hero.subtitle">Консалтинг и стратегия. Социальные сети. Веб и e-commerce. Автоматизация маркетинга</p>
             <div class="hero-cta">
                 <button type="button" class="btn-primary btn-large" id="heroConsultation" data-i18n="hero.consultation">Получить консультацию</button>
@@ -124,9 +124,12 @@
     <!-- Contact Form Section -->
     <section class="contact-form-section" id="contact">
         <div class="container">
-            <h2 class="section-title" data-i18n="contact.title">Свяжитесь со мной</h2>
-            <p class="section-subtitle" data-i18n="contact.subtitle">Оставьте заявку и я свяжусь с вами в ближайшее время</p>
+            <h2 class="section-title" data-i18n="contact.title">Свяжитесь с нами</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Оставьте заявку — и мы свяжемся с вами в ближайшее время</p>
+            <div class="form-message" id="formMessage" aria-live="polite"></div>
             <form class="contact-form" id="contactForm">
+                <input type="hidden" name="_subject" value="New lead from Brandex website">
+                <input type="text" name="_gotcha" style="display:none">
                 <div class="form-group">
                     <label for="name" data-i18n="contact.form.name">Имя *</label>
                     <input type="text" id="name" name="name" autocomplete="name" required>
@@ -188,7 +191,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p id="copyrightText">&copy; 2024 Denys Kamenshchykov</p>
+                <p id="copyrightText">&copy; 2024 Brandex</p>
+                <p id="signatureText">Создано: Denys Kamenshchykov</p>
             </div>
         </div>
     </footer>

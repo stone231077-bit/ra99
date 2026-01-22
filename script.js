@@ -1,9 +1,14 @@
 // ============================================
+// FORMSPREE ENDPOINT
+// ============================================
+const FORM_ENDPOINT = "https://formspree.io/f/xlggqpya";
+
+// ============================================
 // TRANSLATIONS
 // ============================================
 const translations = {
     ru: {
-        'meta.title': 'Denys Kamenshchykov — Digital консалтинг и маркетинг',
+        'meta.title': 'Brandex — Digital консалтинг и маркетинг',
         'meta.description': 'Консалтинг и стратегия, ведение Instagram и Facebook, оптимизация сайтов и интернет-магазинов, автоматизация маркетинга.',
         'nav.menu': 'Меню',
         'nav.services': 'Услуги',
@@ -42,8 +47,8 @@ const translations = {
         'clients.stores.desc': 'Оптимизируем интернет-магазины для роста конверсии и продаж',
         'clients.creators.title': 'Эксперты и блогеры',
         'clients.creators.desc': 'Развиваем личный бренд и увеличиваем аудиторию в соцсетях',
-        'contact.title': 'Свяжитесь со мной',
-        'contact.subtitle': 'Оставьте заявку и я свяжусь с вами в ближайшее время',
+        'contact.title': 'Свяжитесь с нами',
+        'contact.subtitle': 'Оставьте заявку — и мы свяжемся с вами в ближайшее время',
         'contact.form.name': 'Имя *',
         'contact.form.company': 'Компания',
         'contact.form.email': 'Email *',
@@ -59,7 +64,10 @@ const translations = {
         'footer.terms': 'Условия использования',
         'footer.telegram': 'Telegram',
         'footer.whatsapp': 'WhatsApp',
-        'footer.copyright': '© {year} Denys Kamenshchykov. Все права защищены.',
+        'footer.copyright': '© {year} Brandex. Все права защищены.',
+        'footer.signature': 'Создано: Denys Kamenshchykov',
+        'form.success': 'Спасибо! Заявка отправлена. Мы свяжемся с вами в ближайшее время.',
+        'form.error': 'Ошибка отправки. Попробуйте позже или напишите на email.',
         'cookie.text.prefix': 'Мы используем файлы cookie на нашем веб-сайте. Подробнее — в ',
         'cookie.text.link': 'Политике конфиденциальности',
         'cookie.accept': 'Принять',
@@ -72,7 +80,7 @@ const translations = {
         'cookie.modal.close': 'Закрыть'
     },
     uk: {
-        'meta.title': 'Denys Kamenshchykov — Digital консалтинг і маркетинг',
+        'meta.title': 'Brandex — Digital консалтинг і маркетинг',
         'meta.description': 'Консалтинг і стратегія, ведення Instagram та Facebook, оптимізація сайтів і інтернет-магазинів, автоматизація маркетингу.',
         'nav.menu': 'Меню',
         'nav.services': 'Послуги',
@@ -111,8 +119,8 @@ const translations = {
         'clients.stores.desc': 'Оптимізуємо інтернет-магазини для зростання конверсії та продажів',
         'clients.creators.title': 'Експерти та блогери',
         'clients.creators.desc': 'Розвиваємо особистий бренд і збільшуємо аудиторію в соцмережах',
-        'contact.title': 'Зв\'яжіться зі мною',
-        'contact.subtitle': 'Залиште заявку — і я зв\'яжуся з вами найближчим часом',
+        'contact.title': 'Зв\'яжіться з нами',
+        'contact.subtitle': 'Залиште заявку — і ми зв\'яжемося з вами найближчим часом',
         'contact.form.name': 'Ім\'я *',
         'contact.form.company': 'Компанія',
         'contact.form.email': 'Email *',
@@ -128,7 +136,10 @@ const translations = {
         'footer.terms': 'Умови використання',
         'footer.telegram': 'Telegram',
         'footer.whatsapp': 'WhatsApp',
-        'footer.copyright': '© {year} Denys Kamenshchykov. Усі права захищено.',
+        'footer.copyright': '© {year} Brandex. Усі права захищено.',
+        'footer.signature': 'Створено: Denys Kamenshchykov',
+        'form.success': 'Дякуємо! Заявку надіслано. Ми зв\'яжемося з вами найближчим часом.',
+        'form.error': 'Помилка надсилання. Спробуйте пізніше або напишіть на email.',
         'cookie.text.prefix': 'Ми використовуємо файли cookie на нашому веб-сайті. Детальніше — в ',
         'cookie.text.link': 'Політиці конфіденційності',
         'cookie.accept': 'Прийняти',
@@ -141,7 +152,7 @@ const translations = {
         'cookie.modal.close': 'Закрити'
     },
     en: {
-        'meta.title': 'Denys Kamenshchykov — Digital Consulting & Marketing',
+        'meta.title': 'Brandex — Digital Consulting & Marketing',
         'meta.description': 'Consulting and strategy, Instagram and Facebook management, website and e-commerce optimization, marketing automation.',
         'nav.menu': 'Menu',
         'nav.services': 'Services',
@@ -180,8 +191,8 @@ const translations = {
         'clients.stores.desc': 'We optimize e-commerce to improve conversion and revenue',
         'clients.creators.title': 'Experts & creators',
         'clients.creators.desc': 'We grow personal brands and increase social media audiences',
-        'contact.title': 'Contact me',
-        'contact.subtitle': 'Leave a request and I\'ll get back to you shortly',
+        'contact.title': 'Contact us',
+        'contact.subtitle': 'Leave a request and we\'ll get back to you shortly',
         'contact.form.name': 'Name *',
         'contact.form.company': 'Company',
         'contact.form.email': 'Email *',
@@ -197,7 +208,10 @@ const translations = {
         'footer.terms': 'Terms of Service',
         'footer.telegram': 'Telegram',
         'footer.whatsapp': 'WhatsApp',
-        'footer.copyright': '© {year} Denys Kamenshchykov. All rights reserved.',
+        'footer.copyright': '© {year} Brandex. All rights reserved.',
+        'footer.signature': 'Created by: Denys Kamenshchykov',
+        'form.success': 'Thank you! Your request has been sent. We\'ll get back to you shortly.',
+        'form.error': 'Submission failed. Please try again later or email us.',
         'cookie.text.prefix': 'We use cookies on our website. Learn more in our ',
         'cookie.text.link': 'Privacy Policy',
         'cookie.accept': 'Accept',
@@ -282,6 +296,13 @@ function updateCopyright() {
     if (copyrightEl) {
         copyrightEl.textContent = copyrightText;
     }
+    
+    // Update signature
+    const signatureText = translations[currentLang]['footer.signature'];
+    const signatureEl = document.getElementById('signatureText');
+    if (signatureEl) {
+        signatureEl.textContent = signatureText;
+    }
 }
 
 // Initialize language on load
@@ -352,27 +373,78 @@ const contactForm = document.getElementById('contactForm');
 const contactBtn = document.getElementById('contactBtn');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
-        const formData = {
-            name: document.getElementById('name').value,
-            company: document.getElementById('company').value,
-            email: document.getElementById('email').value,
-            phone: document.getElementById('phone').value,
-            message: document.getElementById('message').value
-        };
-
-        console.log('Form submitted:', formData);
+        const formMessage = document.getElementById('formMessage');
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton ? submitButton.textContent : '';
         
-        // Show success message (translate this in production)
-        const successMsg = currentLang === 'ru' ? 'Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.' :
-                          currentLang === 'uk' ? 'Дякуємо за вашу заявку! Ми зв\'яжемося з вами найближчим часом.' :
-                          'Thank you for your request! We will contact you shortly.';
-        alert(successMsg);
+        // Check honeypot field
+        const gotchaField = contactForm.querySelector('input[name="_gotcha"]');
+        if (gotchaField && gotchaField.value) {
+            // Spam detected, silently return
+            return;
+        }
         
-        contactForm.reset();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Clear previous messages
+        if (formMessage) {
+            formMessage.textContent = '';
+            formMessage.className = 'form-message';
+        }
+        
+        // Disable submit button
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = currentLang === 'ru' ? 'Отправка...' :
+                                     currentLang === 'uk' ? 'Надсилання...' :
+                                     'Sending...';
+        }
+        
+        try {
+            const formData = new FormData(contactForm);
+            
+            const response = await fetch(FORM_ENDPOINT, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                // Success
+                if (formMessage) {
+                    formMessage.textContent = translations[currentLang]['form.success'];
+                    formMessage.className = 'form-message success';
+                }
+                
+                // Clear form fields
+                contactForm.reset();
+                
+                // Scroll to message
+                if (formMessage) {
+                    formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            } else {
+                // Error
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            // Show error message
+            if (formMessage) {
+                formMessage.textContent = translations[currentLang]['form.error'];
+                formMessage.className = 'form-message error';
+                formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            console.error('Form submission error:', error);
+        } finally {
+            // Re-enable submit button
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = originalButtonText;
+            }
+        }
     });
 }
 
