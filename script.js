@@ -768,6 +768,13 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
     
+    document.querySelectorAll('.stack-card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+    });
+    
     // Reveal animation observer for stack cards
     const revealItems = document.querySelectorAll('.reveal');
     if (revealItems.length) {

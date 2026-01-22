@@ -348,87 +348,76 @@ body {
 
 .stack-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    margin-top: 48px;
 }
 
 .stack-card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 1.5rem;
+    background: linear-gradient(180deg, #14161a, #0f1115);
+    border-radius: 18px;
+    padding: 28px 22px;
     text-align: center;
-    transition: var(--transition);
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: 
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease;
     position: relative;
     overflow: hidden;
 }
 
 .stack-card::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(64, 130, 255, 0.1), rgba(0, 229, 255, 0.1));
+    inset: 0;
+    background: radial-gradient(
+        circle at top,
+        rgba(99,102,241,0.18),
+        transparent 60%
+    );
     opacity: 0;
-    transition: var(--transition);
-    z-index: 0;
-}
-
-.stack-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(0, 229, 255, 0.4);
-    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.2);
+    transition: opacity 0.35s ease;
 }
 
 .stack-card:hover::before {
     opacity: 1;
 }
 
-.stack-card > * {
-    position: relative;
-    z-index: 1;
+.stack-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.35);
 }
 
 .stack-icon-wrap {
-    width: 54px;
-    height: 54px;
-    border-radius: 14px;
-    display: grid;
-    place-items: center;
-    background: linear-gradient(135deg, rgba(64, 130, 255, 0.22), rgba(0, 255, 200, 0.16));
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    margin: 0 auto 1rem;
-    transition: var(--transition);
-}
-
-.stack-card:hover .stack-icon-wrap {
-    background: linear-gradient(135deg, rgba(64, 130, 255, 0.30), rgba(0, 255, 200, 0.22));
-    border-color: rgba(0, 229, 255, 0.3);
-    box-shadow: 0 4px 12px rgba(0, 229, 255, 0.2);
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border-radius: 16px;
 }
 
 .stack-icon {
-    width: 28px;
-    height: 28px;
-    color: var(--accent-color);
+    width: 30px;
+    height: 30px;
+    color: #fff;
 }
 
 .stack-name {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 6px;
     color: var(--secondary-color);
 }
 
 .stack-desc {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 1.5;
-    margin: 0;
+    opacity: 0.8;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* Reveal Animation */
